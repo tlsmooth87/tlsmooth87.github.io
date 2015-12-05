@@ -4,15 +4,127 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name="keywords" content="岩崎裕介,プログラマ,メッセージボード,Twitterクローン,モノリスト">
+    <title>岩崎 裕介 | Portfolio</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        font-size: 14px;
+      }
+      
+      header {
+        background-image: url("Header.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      #logo {
+        padding: 20px 0;
+        text-align: center;
+        color: #0f0;
+      }
+
+      #logo img {
+        max-width: 120px;
+        border: 5px solid #0f0;
+        border-radius: 100%;
+      }
+
+      .table-responsive img {
+        max-width: 80px;
+        border-radius: 10%;
+      }
+
+      footer {
+        background-color: #ccc;
+        text-align: center;
+      }
+      
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #666;
+      }
+      
+      @media (max-width: 768px) {
+        body {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world! LOL</h1>
+    <header>
+      <div id="logo">
+        <img src="YusukeIwasaki.png" alt="" />
+        <h1>岩崎 裕介</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="page-header">
+        <h2>自己紹介</h2>
+      </div>
+      <p>千葉県出身。プログラマ目指して修行中です。</p>
+      <p><a href="https://github.com/tlsmooth88" target="_blank">GitHub Page</a></p>
+      <h2>制作中のサービス一覧</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>仮のイメージ</th>
+              <th>仮の名称と説明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="MessageBoard.png" alt="" /></td>
+              <td>
+                <b>メッセージボード</b><br />
+                メッセージを投稿して<br />
+                表示します
+              </td>
+            <tr>
+              <td><img src="Twitter.png" alt="" /></td>
+              <td>
+                <b>Twitterクローン</b><br />
+                つぶやきを投稿したり<br />
+                他のユーザをフォローして<br />
+                タイムラインを表示します
+              </td>
+            <tr>
+              <td><img src="MonoList.png" alt="" /></td>
+              <td>
+                <b>モノリスト</b><br />
+                Amazonの商品を検索し<br />
+                自分が持っているものや<br />
+                欲しい物を共有します
+              </td>
+            </tr>
+            <tr>
+              <td><img src="Original.png" alt="" /></td>
+              <td>
+                <b>オリジナルサービス</b><br />
+                まだ未定です
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">&copy; 2015 Yusuke Iwasaki</div>
+    </footer>
   </body>
 </html>
